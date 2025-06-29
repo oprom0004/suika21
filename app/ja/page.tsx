@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   publisher: "Suika Games",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
-    canonical: "https://suika.games/",
+    canonical: "https://suika.games/ja",
     languages: {
       "x-default": "https://suika.games/",
       ja: "https://suika.games/ja",
@@ -303,7 +303,7 @@ export default function HomePage() {
 
           <div className="w-full max-w-4xl game-shadow rounded-3xl overflow-hidden bg-white p-2">
             <iframe
-              src="https://suikagamejp.com/game/game-ja"
+              src="https://suikagamejp.com/game/game-en"
               title="スイカゲーム - 無料でオンラインプレイ"
               className="w-full h-[500px] md:h-[600px] lg:h-[700px] rounded-2xl"
               frameBorder="0"
