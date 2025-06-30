@@ -1,26 +1,41 @@
 {
-  "name": "Suika Games - Watermelon Puzzle Online",
+  "name": "Suika Games - Watermelon Puzzle Game",
   "short_name": "Suika Games",
-  "description": "Play Suika Game and watermelon puzzle variants online for free",
+  "description": "Play Suika Game free online! Merge fruits to create watermelons in this viral Japanese puzzle.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#4ade80",
   "theme_color": "#4ade80",
   "orientation": "portrait-primary",
-  "categories": ["games", "entertainment"],
+  "scope": "/",
   "lang": "en",
+  "categories": ["games", "puzzle", "casual"],
   "icons": [
     {
       "src": "/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable any"
+      "purpose": "any maskable"
     },
     {
       "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable any"
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
     }
   ]
 }

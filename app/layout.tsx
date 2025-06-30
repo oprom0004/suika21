@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { CookieConsent } from "./components/CookieConsent"
 import { LanguageProvider } from "./components/LanguageProvider"
+import { AICrawlerMeta } from "./components/AICrawlerMeta"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -57,15 +58,24 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+    bingbot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   verification: {
     google: "your-google-verification-code",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
+    bing: "your-bing-verification-code",
   },
   alternates: {
     canonical: "https://suika.games",
     languages: {
+      "x-default": "https://suika.games",
       en: "https://suika.games",
       ja: "https://suika.games/ja",
       es: "https://suika.games/es",
@@ -85,10 +95,11 @@ export const metadata: Metadata = {
       "🍉 Play the viral Japanese watermelon puzzle game free online! Merge fruits, create watermelons, and enjoy 11+ game variants.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://suika.games/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Suika Game - Watermelon Puzzle Game Online",
+        type: "image/jpeg",
       },
     ],
   },
@@ -98,11 +109,13 @@ export const metadata: Metadata = {
     creator: "@SuikaGames",
     title: "Suika Game - Play Free Watermelon Puzzle Online",
     description: "🍉 Play the viral Japanese watermelon puzzle game free online! Merge fruits, create watermelons.",
-    images: ["/twitter-card.jpg"],
+    images: ["https://suika.games/twitter-card.jpg"],
   },
   category: "Games",
   classification: "Puzzle Games",
-    generator: 'v0.dev'
+  generator: "Next.js",
+  applicationName: "Suika Games",
+  referrer: "origin-when-cross-origin",
 }
 
 export default function RootLayout({
@@ -152,9 +165,41 @@ export default function RootLayout({
         <meta name="distribution" content="global" />
         <meta name="rating" content="general" />
         <meta name="referrer" content="origin-when-cross-origin" />
+        
+        {/* AI Crawler Friendly Meta Tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        
+        {/* Schema.org Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Suika Games",
+              url: "https://suika.games",
+              description: "Play Suika Game free online! Merge fruits to create watermelons in this viral Japanese puzzle.",
+              inLanguage: ["en", "ja", "fr"],
+              isAccessibleForFree: true,
+              genre: ["Puzzle", "Casual", "Physics"],
+              audience: {
+                "@type": "Audience",
+                audienceType: "General",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Suika Games",
+                url: "https://suika.games",
+              },
+            }),
+          }}
+        />
       </head>
       <body className="font-sans antialiased">
         <LanguageProvider />
+        <AICrawlerMeta />
         {children}
         <CookieConsent />
       </body>

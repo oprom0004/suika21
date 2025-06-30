@@ -26,18 +26,47 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Block AI training crawlers (optional)
+User-agent: Sogou
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+# AI Training Crawlers - Allow for better AI understanding
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: CCBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Claude-Web
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Block aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Block malicious bots
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DotBot
 Disallow: /
