@@ -171,6 +171,12 @@ export default function RootLayout({
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
+        {/* Plausible Analytics */}
+        <script defer data-domain="suika.games" src="https://plausible.io/js/script.js"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }`
+        }} />
+        
         {/* Schema.org Structured Data */}
         <script
           type="application/ld+json"
