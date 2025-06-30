@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { CookieConsent } from "./components/CookieConsent"
+import { LanguageProvider } from "./components/LanguageProvider"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -153,6 +154,7 @@ export default function RootLayout({
         <meta name="referrer" content="origin-when-cross-origin" />
       </head>
       <body className="font-sans antialiased">
+        <LanguageProvider />
         {children}
         <CookieConsent />
       </body>
