@@ -209,28 +209,28 @@ const fruitEvolution = [
 
 const latestUpdates = [
   {
-    date: "2025-01-28",
+    date: "2025-06-30",
     title: "新しいスイカゲームバリエーション追加",
     description: "スイカアンブロックドやセレブリティバージョンを含む3つの新しいバリエーションを発見しよう。",
     category: "新作ゲーム",
     link: "/#games-like-suika",
   },
   {
-    date: "2025-01-25",
+    date: "2025-06-25",
     title: "モバイルパフォーマンス改善",
     description: "全てのゲームバリエーションでタッチコントロールの向上と読み込み時間の短縮を実現。",
     category: "アップデート",
     link: "/",
   },
   {
-    date: "2025-01-22",
+    date: "2025-06-22",
     title: "プロ戦略ガイド公開",
     description: "ハイスコアを達成するための包括的な戦略ガイドで高度なテクニックをマスター。",
     category: "ガイド",
     link: "/howtowin",
   },
   {
-    date: "2025-01-20",
+    date: "2025-06-20",
     title: "多言語サポート拡大",
     description: "ローカライズされたコンテンツと説明で6つの言語でスイカゲームをプレイ。",
     category: "機能",

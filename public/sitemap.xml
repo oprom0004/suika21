@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://suika.games/</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ja" href="https://suika.games/ja"/>
@@ -18,7 +18,7 @@
   <!-- Language Pages -->
   <url>
     <loc>https://suika.games/ja</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://suika.games/"/>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://suika.games/fr</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://suika.games/"/>
@@ -36,25 +36,25 @@
   <!-- Legal Pages -->
   <url>
     <loc>https://suika.games/privacy-policy</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://suika.games/terms-of-service</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://suika.games/about</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://suika.games/contact</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -62,19 +62,19 @@
   <!-- Long-tail SEO Pages -->
   <url>
     <loc>https://suika.games/play-suika-game-unblocked</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://suika.games/howtowin</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://suika.games/watermelon-puzzle-game-online</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -82,31 +82,31 @@
   <!-- Game Variant Pages -->
   <url>
     <loc>https://suika.games/suika-classic</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://suika.games/suika-poki</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://suika.games/suika-strategy</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://suika.games/games-like-suika</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://suika.games/suika-game-tips</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
