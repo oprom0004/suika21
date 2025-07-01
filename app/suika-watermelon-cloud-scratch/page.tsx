@@ -128,7 +128,7 @@ export default function SuikaWatermelonCloudScratchPage() {
         <h3 className="text-2xl font-bold text-blue-800 mb-4">FAQ – Cloud Suika Watermelon Game</h3>
         <div className="mb-4">
           <strong>Q: What does "cloud" mean in this watermelon game?</strong>
-          <p>A: "Cloud" refers to the fruits falling from clouds in the sky, not cloud storage. It's a unique visual twist on the classic suika game!</p>
+          <p>A: "Cloud" means that fruits fall from fluffy clouds in the sky, giving the game a relaxing and dreamy atmosphere. It's a fun visual twist on the classic Suika Game!</p>
         </div>
         <div className="mb-4">
           <strong>Q: Is this the same as the original Suika Game?</strong>
@@ -152,9 +152,70 @@ export default function SuikaWatermelonCloudScratchPage() {
         </p>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 text-center text-gray-500 text-sm">
-        © 2025 Suika Game Cloud Version. All rights reserved. | Play the best watermelon game online!
+      {/* Footer with Legal Links - same as homepage */}
+      <footer className="py-12 px-4 bg-gray-900 text-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div className="md:col-span-2">
+              <div className="mb-6">
+                <span className="text-4xl" role="img" aria-label="Watermelon">🍉</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Suika Games</h3>
+              <p className="text-gray-400 mb-6">
+                The ultimate destination for Suika Game and watermelon puzzle variants. Play free online with no downloads required.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <nav>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                      Play Suika Game
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#games-like-suika" className="text-gray-400 hover:text-white transition-colors">
+                      Game Variants
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Legal</h4>
+              <nav>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">
+                      Terms of Service
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p className="text-gray-500 text-sm">
+              © 2025 Suika Games. All rights reserved. • Play responsibly and have fun! 🎮
+            </p>
+          </div>
+        </div>
       </footer>
     </main>
   )
