@@ -26,7 +26,7 @@ export default function PlaySuikaGameUnblockedPage() {
         <div className="mb-12 flex justify-center">
           <div className="w-full max-w-2xl game-shadow rounded-2xl overflow-hidden bg-white">
             <GameEmbed
-              src="https://suika-game.app/"
+              src="https://turbowarp.org/911281961/embed"
               title="Suika Game Unblocked"
               className="w-full h-[500px] md:h-[600px]"
             />

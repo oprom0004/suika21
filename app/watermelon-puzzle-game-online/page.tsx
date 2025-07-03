@@ -30,7 +30,7 @@ export default function WatermelonPuzzleGameOnlinePage() {
           <div className="w-full max-w-4xl game-shadow rounded-3xl overflow-hidden bg-white p-2">
             <iframe
               src="https://suikagamejp.com/game/game-en"
-              title="Watermelon Puzzle Game Online"
+              title="Watermelon Puzzle Game Cloud Version Online"
               className="w-full h-[500px] md:h-[600px] lg:h-[700px] rounded-2xl"
               frameBorder="0"
               allowFullScreen
