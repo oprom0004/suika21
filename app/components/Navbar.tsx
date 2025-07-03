@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink } from "@/components/ui/navigation-menu"
 import { Menu, X } from "lucide-react"
+import { LanguageSwitcher } from "./LanguageSwitcher"
 
 const languages = [
   { code: "en", name: "English" },
@@ -43,57 +44,71 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="w-full bg-white/90 border-b border-gray-200 shadow-sm sticky top-0 z-30">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-        {/* Logo */}
-        <Link href={lang === "en" ? "/" : `/${lang}`}
-          className="flex items-center text-2xl font-extrabold text-green-600 hover:text-green-700 transition-colors"
-          aria-label="Suika Game Home"
-        >
-          <span className="mr-2">🍉</span> Suika Game
-        </Link>
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-2">
-          <NavigationMenu>
-            <NavigationMenuList>
-              {navItems.map(item => (
-                <NavigationMenuItem key={item.label}>
-                  <NavigationMenuLink asChild>
+    <div className="w-full bg-white flex justify-center">
+      <div className="w-full max-w-7xl flex" style={{ minHeight: 56 }}>
+        {/* 左侧logo栏，宽度适中 */}
+        <div className="flex items-center justify-center pl-3 md:pl-0 w-auto md:w-[120px]">
+          <Link
+            href={lang === "en" ? "/" : `/${lang}`}
+            className="flex items-center text-lg font-extrabold text-green-600 hover:text-green-700 transition-colors whitespace-nowrap"
+            aria-label="Suika Game Home"
+            style={{ lineHeight: 1, padding: '6px 0' }}
+          >
+            <span className="mr-2 text-xl">🍉</span> Suika Game
+          </Link>
+        </div>
+        {/* 右侧内容区，flex-1，上下两行更紧凑 */}
+        <div className="flex-1 flex flex-col gap-0">
+          {/* 上面一行：语言栏靠右，紧凑 */}
+          <div className="flex justify-end items-center pr-4 py-1">
+            <LanguageSwitcher />
+          </div>
+          {/* 下面一行：主导航栏，紧凑 */}
+          <div className="flex items-center pl-4 py-1">
+            {/* Desktop Nav */}
+            <div className="hidden md:flex items-center space-x-2 flex-1 justify-end">
+              <NavigationMenu>
+                <NavigationMenuList>
+                  {navItems.map(item => (
+                    <NavigationMenuItem key={item.label}>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href={langPath(lang, item.path)}
+                          className="px-4 py-2 rounded-md text-gray-700 font-medium hover:bg-green-100 hover:text-green-700 transition-colors"
+                        >
+                          {item.label}
+                        </Link>
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
+                  ))}
+                </NavigationMenuList>
+              </NavigationMenu>
+            </div>
+            {/* Mobile Burger */}
+            <button className="md:hidden p-2 rounded focus:outline-none ml-auto" onClick={() => setOpen(!open)} aria-label="Open Menu">
+              {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+          {/* Mobile Menu */}
+          {open && (
+            <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
+              <ul className="flex flex-col py-2">
+                {navItems.map(item => (
+                  <li key={item.label}>
                     <Link
                       href={langPath(lang, item.path)}
-                      className="px-4 py-2 rounded-md text-gray-700 font-medium hover:bg-green-100 hover:text-green-700 transition-colors"
+                      className="block px-6 py-3 text-gray-700 font-medium hover:bg-green-100 hover:text-green-700 transition-colors"
+                      onClick={() => setOpen(false)}
                     >
                       {item.label}
                     </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
-        {/* Mobile Burger */}
-        <button className="md:hidden p-2 rounded focus:outline-none" onClick={() => setOpen(!open)} aria-label="Open Menu">
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
       </div>
-      {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
-          <ul className="flex flex-col py-2">
-            {navItems.map(item => (
-              <li key={item.label}>
-                <Link
-                  href={langPath(lang, item.path)}
-                  className="block px-6 py-3 text-gray-700 font-medium hover:bg-green-100 hover:text-green-700 transition-colors"
-                  onClick={() => setOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </nav>
+    </div>
   )
 } 

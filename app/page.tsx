@@ -290,7 +290,7 @@ export default function HomePage() {
         {/* Section 1: Hero Section with Game Embed */}
         <section id="play" className="relative min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-gradient-to-br from-orange-50 via-yellow-50 to-green-50">
           <div className="text-center mb-8 max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Play Suika Game Free Online - Watermelon Puzzle Game
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 font-medium mb-4">
@@ -324,7 +324,7 @@ export default function HomePage() {
         <section id="games-like-suika" className="py-20 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Suika Game Variants &amp; Creative Remixes
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -363,7 +363,7 @@ export default function HomePage() {
         {/* Section 3: How to Play */}
         <section className="py-20 px-4 bg-gradient-to-r from-green-50 to-blue-50">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
               How to Play Suika Watermelon Game
             </h2>
 
@@ -412,7 +412,7 @@ export default function HomePage() {
         <section className="py-20 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 📌 How to Merge Fruits - Complete Evolution Guide
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -511,7 +511,7 @@ export default function HomePage() {
         {/* Section 5: Strategy Tips */}
         <section className="py-20 px-4 bg-gradient-to-r from-blue-50 to-purple-50">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">
               Pro Strategy Tips for Suika Game
             </h2>
             <h3 className="text-2xl md:text-3xl font-semibold text-center text-gray-700 mb-12">
