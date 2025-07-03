@@ -288,7 +288,7 @@ export default function HomePage() {
 
       <main className="min-h-screen">
         {/* Section 1: Hero Section with Game Embed */}
-        <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-gradient-to-br from-orange-50 via-yellow-50 to-green-50">
+        <section id="play" className="relative min-h-screen flex flex-col items-center justify-center px-4 py-8 bg-gradient-to-br from-orange-50 via-yellow-50 to-green-50">
           <div className="text-center mb-8 max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Play Suika Game Free Online - Watermelon Puzzle Game

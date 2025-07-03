@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { CookieConsent } from "./components/CookieConsent"
 import { LanguageProvider } from "./components/LanguageProvider"
 import { AICrawlerMeta } from "./components/AICrawlerMeta"
+import Navbar from "./components/Navbar"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -58,19 +59,11 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-    bingbot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   verification: {
     google: "your-google-verification-code",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
-    bing: "your-bing-verification-code",
   },
   alternates: {
     canonical: "https://suika.games",
@@ -169,7 +162,6 @@ export default function RootLayout({
         {/* AI Crawler Friendly Meta Tags */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Plausible Analytics */}
         <script defer data-domain="suika.games" src="https://plausible.io/js/script.js"></script>
@@ -206,6 +198,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <LanguageProvider />
         <AICrawlerMeta />
+        <Navbar />
         {children}
         <CookieConsent />
       </body>
