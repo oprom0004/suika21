@@ -20,7 +20,7 @@ const languages = [
 const navItems = [
   { label: "Home", path: "" },
   { label: "🎮 Play Now", path: "#play" },
-  { label: "🧠 Tips & Guide", path: "suika-game-tips" },
+  { label: "Tips & Guide", path: "suika-game-tips" },
   { label: "FAQ", path: "#faq" },
   { label: "Contact", path: "contact" },
   { label: "Privacy Policy", path: "privacy-policy" },
