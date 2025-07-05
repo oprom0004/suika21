@@ -2,11 +2,11 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Suika Games - How We Protect Your Data",
+  title: "Privacy Policy | ClickWar Games - How We Protect Your Data",
   description:
-    "Learn how Suika Games collects, uses, and protects your personal information. Our privacy policy covers cookies, third-party advertising, and data security.",
+    "Learn how ClickWar Games collects, uses, and protects your personal information. Our privacy policy covers cookies, third-party advertising, and data security.",
   alternates: {
-    canonical: "https://suika.games/privacy-policy",
+    canonical: "https://clickwar.app/privacy-policy",
   },
 }
 
@@ -22,8 +22,8 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Introduction</h2>
               <p>
-                Suika Games ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains
-                how we collect, use, disclose, and safeguard your information when you visit our website suika.games and
+                ClickWar Games ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains
+                how we collect, use, disclose, and safeguard your information when you visit our website clickwar.app and
                 play our games.
               </p>
             </section>
@@ -71,7 +71,7 @@ export default function PrivacyPolicyPage() {
                   href="https://www.google.com/settings/ads"
                   className="text-blue-600 hover:text-blue-800 underline"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                 >
                   Google's Ad Settings
                 </a>
@@ -164,7 +164,7 @@ export default function PrivacyPolicyPage() {
                 <Link href="/contact" className="text-blue-600 hover:text-blue-800 underline">
                   our contact page
                 </Link>{" "}
-                or email us at contact@suika.games.
+                or email us at contact@clickwar.app.
               </p>
             </section>
           </div>
@@ -175,7 +175,7 @@ export default function PrivacyPolicyPage() {
                 href="/"
                 className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors duration-200"
               >
-                Back to Suika Game
+                Back to ClickWar Game
               </Link>
               <Link
                 href="/terms-of-service"

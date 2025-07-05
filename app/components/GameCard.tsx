@@ -11,7 +11,7 @@ export function GameCard({ name, description, slug, priority = false }: GameCard
   return (
     <div className={`bg-white rounded-xl p-6 game-shadow card-hover ${priority ? "ring-2 ring-green-200" : ""}`}>
       <div className="w-full h-32 bg-gradient-to-br from-orange-100 to-green-100 rounded-lg mb-4 flex items-center justify-center">
-        <span className="text-4xl">🍉</span>
+        <span className="text-4xl">🖱️</span>
       </div>
       <h3 className="text-xl font-semibold text-gray-900 mb-2">{name}</h3>
       <p className="text-gray-600 mb-4 text-sm leading-relaxed">{description}</p>

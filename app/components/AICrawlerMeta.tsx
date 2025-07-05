@@ -16,11 +16,11 @@ export function AICrawlerMeta() {
       },
       {
         name: 'game-type',
-        content: 'puzzle'
+        content: 'strategy'
       },
       {
         name: 'game-genre',
-        content: 'casual,physics,merge'
+        content: 'strategy,war,conquest,real-time'
       },
       {
         name: 'game-platform',
@@ -28,15 +28,19 @@ export function AICrawlerMeta() {
       },
       {
         name: 'game-language',
-        content: 'en,ja,fr'
+        content: 'en,ja,vi'
       },
       {
         name: 'game-difficulty',
-        content: 'easy,medium'
+        content: 'easy,medium,hard'
       },
       {
         name: 'game-age-rating',
         content: 'all-ages'
+      },
+      {
+        name: 'game-features',
+        content: 'missile-warfare,world-domination,territory-conquest,real-time-strategy'
       }
     ]
 

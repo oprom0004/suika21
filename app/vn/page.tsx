@@ -1,51 +1,34 @@
 import Link from "next/link";
 import { GameEmbed } from "../components/GameEmbed";
-import { Metadata, Viewport } from "next";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ClickWar - 世界征服戦略ゲーム | 無料プレイ",
-  description: "ClickWarを無料でプレイ - 世界征服戦略ゲーム。ミサイルを発射し、領土を制圧して世界のリーダーになろう。ダウンロード不要、今すぐプレイ！",
-  keywords: "ClickWar, 戦略ゲーム, オンラインゲーム, 世界戦争, ミサイル, 征服, 無料, 今すぐプレイ",
-  authors: [{ name: "ClickWar Team" }],
-  creator: "ClickWar",
-  publisher: "ClickWar",
-  category: "Games",
-  other: {
-    "theme-color": "#FFD600",
-    "msapplication-TileColor": "#FFD600",
-    "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "black-translucent",
-    "format-detection": "telephone=no",
-    "mobile-web-app-capable": "yes",
-  },
+  title: "ClickWar - Trò Chơi Chiến Lược Thống Trị Thế Giới | Chơi Miễn Phí",
+  description: "Chơi ClickWar - trò chơi chiến lược thống trị thế giới miễn phí. Phóng tên lửa, chiếm lĩnh lãnh thổ và trở thành nhà lãnh đạo toàn cầu. Không cần tải xuống, chơi ngay!",
+  keywords: "ClickWar, trò chơi chiến lược, game online, chiến tranh thế giới, tên lửa, thống trị, miễn phí, chơi ngay",
   openGraph: {
-    title: "ClickWar - 世界征服戦略ゲーム",
-    description: "ClickWarを無料でプレイ - 世界征服戦略ゲーム。ミサイルを発射して領土を制圧しよう！",
+    title: "ClickWar - Trò Chơi Chiến Lược Thống Trị Thế Giới",
+    description: "Chơi ClickWar miễn phí - trò chơi chiến lược thống trị thế giới. Phóng tên lửa và chiếm lĩnh lãnh thổ!",
     type: "website",
-    locale: "ja_JP",
-    url: "https://clickwar.app/ja",
-    images: [
-      {
-        url: "https://clickwar.app/screenshot-wide.png",
-        width: 1200,
-        height: 630,
-        alt: "ClickWarゲームスクリーンショット"
-      }
-    ]
+    locale: "vi_VN",
+    url: "https://clickwar.app/vn",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClickWar - 世界征服戦略ゲーム",
-    description: "ClickWarを無料でプレイ - 世界征服戦略ゲーム！",
-    images: ["https://clickwar.app/screenshot-wide.png"]
+    title: "ClickWar - Trò Chơi Chiến Lược Thống Trị Thế Giới",
+    description: "Chơi ClickWar miễn phí - trò chơi chiến lược thống trị thế giới!",
   },
   alternates: {
-    canonical: "https://clickwar.app/ja",
+    canonical: "https://clickwar.app/vn",
     languages: {
-      "x-default": "/",
       "en": "/",
       "vi": "/vn",
+      "es": "/es",
+      "fr": "/fr",
+      "de": "/de",
       "ja": "/ja",
+      "nl": "/nl",
+      "pt": "/pt",
     }
   },
   robots: {
@@ -59,19 +42,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-  },
 };
 
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-};
-
-export default function JapaneseHomePage() {
+export default function VietnameseHomePage() {
   return (
     <>
       {/* Structured Data for SEO */}
@@ -82,8 +55,8 @@ export default function JapaneseHomePage() {
             "@context": "https://schema.org",
             "@type": "WebApplication",
             "name": "ClickWar",
-            "description": "無料の世界征服戦略ゲーム",
-            "url": "https://clickwar.app/ja",
+            "description": "Trò chơi chiến lược thống trị thế giới miễn phí",
+            "url": "https://clickwar.app/vn",
             "applicationCategory": "Game",
             "operatingSystem": "Web Browser",
             "offers": {
@@ -100,13 +73,11 @@ export default function JapaneseHomePage() {
               "@type": "Organization",
               "name": "ClickWar Team"
             },
-            "inLanguage": "ja-JP",
+            "inLanguage": "vi-VN",
             "genre": ["Strategy", "War", "Real-time"],
             "gamePlatform": ["Web Browser", "Mobile"],
             "screenshot": "https://clickwar.app/screenshot-wide.png",
-            "softwareVersion": "1.0",
-            "datePublished": "2024-01-01",
-            "dateModified": "2024-12-01"
+            "softwareVersion": "1.0"
           })
         }}
       />
@@ -122,14 +93,14 @@ export default function JapaneseHomePage() {
               {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "ホーム",
+                "name": "Trang Chủ",
                 "item": "https://clickwar.app"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "ClickWar 日本語",
-                "item": "https://clickwar.app/ja"
+                "name": "ClickWar Tiếng Việt",
+                "item": "https://clickwar.app/vn"
               }
             ]
           })
@@ -146,34 +117,34 @@ export default function JapaneseHomePage() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "ClickWarの遊び方は？",
+                "name": "Làm thế nào để chơi ClickWar?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "国をクリックして選択し、ミサイルを発射して攻撃します。HPを0にして制圧し、帝国を拡大しましょう。"
+                  "text": "Nhấp vào một quốc gia để chọn nó, sau đó phóng tên lửa để tấn công. Giảm HP xuống 0 để chiếm lĩnh và mở rộng đế chế của bạn."
                 }
               },
               {
                 "@type": "Question",
-                "name": "ClickWarは無料ですか？",
+                "name": "ClickWar có miễn phí không?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "はい！登録やダウンロードは不要です。ブラウザで今すぐプレイできます。"
+                  "text": "Có! Không cần đăng ký hoặc tải xuống. Chơi ngay lập tức trong trình duyệt của bạn."
                 }
               },
               {
                 "@type": "Question",
-                "name": "スマートフォンでプレイできますか？",
+                "name": "Tôi có thể chơi trên điện thoại không?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "もちろん！ClickWarは完全に互換性があり、すべてのデバイスで動作します。"
+                  "text": "Chắc chắn! ClickWar hoàn toàn tương thích và hoạt động trên mọi thiết bị."
                 }
               },
               {
                 "@type": "Question",
-                "name": "自分の国を守るには？",
+                "name": "Làm thế nào để bảo vệ các quốc gia của tôi?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "自分の領土をクリックして回復し、防御シールドを追加します。攻撃と防御のバランスを取って最良の結果を得ましょう。"
+                  "text": "Nhấp vào lãnh thổ của bạn để hồi phục và thêm khiên bảo vệ. Cân bằng tấn công và phòng thủ để có kết quả tốt nhất."
                 }
               }
             ]
@@ -181,54 +152,30 @@ export default function JapaneseHomePage() {
         }}
       />
       
-      {/* Organization Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "ClickWar",
-            "url": "https://clickwar.app",
-            "logo": "https://clickwar.app/favicon.svg",
-            "sameAs": [
-              "https://discord.gg/xxxx",
-              "https://reddit.com/r/clickwar"
-            ],
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "customer service",
-              "email": "support@clickwar.app"
-            }
-          })
-        }}
-      />
-      
-              <main style={{ minHeight: "100vh", background: "#10131a", color: "#fff", fontFamily: "sans-serif" }} lang="ja">
+              <main style={{ minHeight: "100vh", background: "#10131a", color: "#fff", fontFamily: "sans-serif" }}>
           {/* Breadcrumb Navigation */}
           <nav style={{ padding: "12px 24px", background: "#181c27", borderBottom: "1px solid #23263a" }}>
             <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", alignItems: "center", gap: 8, fontSize: 14 }}>
-              <Link href="/" style={{ color: "#FFD600", textDecoration: "none" }}>ホーム</Link>
+              <Link href="/" style={{ color: "#FFD600", textDecoration: "none" }}>Trang Chủ</Link>
               <span style={{ color: "#666" }}>/</span>
-              <span style={{ color: "#fff" }}>日本語</span>
+              <span style={{ color: "#fff" }}>Tiếng Việt</span>
             </div>
           </nav>
           
           {/* Hero Section with Game */}
-      <section style={{ padding: "20px 0 40px", textAlign: "center" }} aria-labelledby="main-title">
-        <h1 style={{ fontSize: 48, fontWeight: "bold", margin: "20px 0 10px", textAlign: "center" }} id="main-title">
+      <section style={{ padding: "20px 0 40px", textAlign: "center" }}>
+        <h1 style={{ fontSize: 48, fontWeight: "bold", margin: "20px 0 10px", textAlign: "center" }}>
           🎯 CLICKWAR
         </h1>
-                  <p style={{ textAlign: "center", fontSize: 20, marginBottom: 20 }}>
-            世界征服戦略ゲーム
-          </p>
+        <p style={{ textAlign: "center", fontSize: 20, marginBottom: 20 }}>
+          Trò Chơi Chiến Lược Thống Trị Thế Giới
+        </p>
         {/* Play Now Button instead of iframe */}
         <div style={{ margin: "40px auto 32px", maxWidth: 900, padding: "0 20px" }}>
           <a
             href="https://clickwar.games"
             target="_blank"
             rel="noopener noreferrer nofollow"
-            aria-label="ClickWarゲームを新しいタブで開く"
             style={{
               display: "inline-block",
               background: "linear-gradient(90deg, #FFD600 0%, #d32f2f 100%)",
@@ -244,13 +191,13 @@ export default function JapaneseHomePage() {
               margin: "0 auto"
             }}
           >
-            🚀 CLICKWARを今すぐプレイ
+            🚀 CHƠI CLICKWAR NGAY
           </a>
         </div>
         {/* Hero CTA Buttons */}
         <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap", marginTop: 24 }}>
           <Link href="/how-to-play-clickwar" 
-            title="ClickWarの詳細な遊び方ガイド"
+            title="Hướng dẫn cách chơi ClickWar chi tiết"
             style={{ 
             background: "#181c27", 
             color: "#FFD600", 
@@ -261,10 +208,10 @@ export default function JapaneseHomePage() {
             border: "2px solid #FFD600",
             transition: "all 0.3s ease"
           }}>
-            📖 遊び方
+            📖 Cách Chơi
           </Link>
           <Link href="/clickwar-strategy" 
-            title="ClickWar戦略ガイド"
+            title="Hướng dẫn chiến lược ClickWar"
             style={{ 
             background: "#FFD600", 
             color: "#181c27", 
@@ -274,19 +221,19 @@ export default function JapaneseHomePage() {
             textDecoration: "none",
             transition: "all 0.3s ease"
           }}>
-            🎯 戦略ガイド
+            🎯 Hướng Dẫn Chiến Lược
           </Link>
         </div>
       </section>
 
       {/* 特色介绍区块 */}
       <section style={{ maxWidth: 1100, margin: "48px auto 0", padding: 24 }}>
-        <h2 style={{ color: "#FFD600", fontSize: 32, fontWeight: 700, textAlign: "center", marginBottom: 32 }}>なぜClickWarをプレイするのか？</h2>
+        <h2 style={{ color: "#FFD600", fontSize: 32, fontWeight: 700, textAlign: "center", marginBottom: 32 }}>Tại Sao Chơi ClickWar?</h2>
         <div style={{ display: "flex", gap: 24, flexWrap: "wrap", justifyContent: "center" }}>
                       {[
-            { icon: "🚀", title: "リアルタイムミサイル戦闘", desc: "リアルタイムミサイル攻撃とグローバル戦争を体験。" },
-            { icon: "🌍", title: "世界征服", desc: "国々を征服し、領土を拡大して世界のリーダーになろう。" },
-            { icon: "⚡", title: "即座のアクション", desc: "ダウンロード不要、登録不要。すべてのデバイスで今すぐオンラインプレイ。" },
+            { icon: "🚀", title: "Chiến Đấu Tên Lửa Trực Tiếp", desc: "Trải nghiệm tấn công tên lửa thời gian thực và chiến tranh toàn cầu." },
+            { icon: "🌍", title: "Thống Trị Thế Giới", desc: "Chinh phục các quốc gia, mở rộng lãnh thổ và trở thành nhà lãnh đạo toàn cầu." },
+            { icon: "⚡", title: "Hành Động Tức Thì", desc: "Không cần tải xuống, không cần đăng ký. Chơi ngay lập tức trực tuyến trên mọi thiết bị." },
           ].map((item, i) => (
             <div key={i} style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 32, flex: "1 1 280px", minWidth: 260, maxWidth: 340, textAlign: "center", marginBottom: 16, boxShadow: "0 4px 24px #0004" }}>
               <div style={{ fontSize: 40, marginBottom: 16 }}>{item.icon}</div>
@@ -299,39 +246,39 @@ export default function JapaneseHomePage() {
 
       {/* 玩法攻略/新手引导/进阶技巧区块，紧跟特色介绍区块 */}
       <section style={{ maxWidth: 1100, margin: "48px auto 0", padding: 24 }}>
-        <h2 style={{ color: "#FFD600", fontSize: 28, fontWeight: 700, textAlign: "center", marginBottom: 32 }}>ClickWarをマスターする方法</h2>
+        <h2 style={{ color: "#FFD600", fontSize: 28, fontWeight: 700, textAlign: "center", marginBottom: 32 }}>Cách Thành Thạo ClickWar</h2>
         <div style={{ display: "flex", gap: 24, flexWrap: "wrap", justifyContent: "center" }}>
           {/* 新手引导 */}
           <div style={{ background: "#181c27", border: "2px solid #2196f3", borderRadius: 16, padding: 32, flex: "1 1 280px", minWidth: 260, maxWidth: 340, textAlign: "center", marginBottom: 16, boxShadow: "0 4px 24px #0004" }}>
             <div style={{ fontSize: 36, marginBottom: 12 }}>🧭</div>
-            <div style={{ fontWeight: 700, fontSize: 18, color: "#90caf9", marginBottom: 8 }}>初心者向けガイド</div>
+            <div style={{ fontWeight: 700, fontSize: 18, color: "#90caf9", marginBottom: 8 }}>Hướng Dẫn Cho Người Mới</div>
             <ul style={{ color: "#eee", fontSize: 15, textAlign: "left", margin: "0 auto", maxWidth: 220, paddingLeft: 18 }}>
-              <li>国をクリックしてターゲットを選択</li>
-              <li>ミサイルを発射して敵のHPを削減</li>
-              <li>国を制圧して帝国を拡大</li>
-              <li>自分の領土を回復・防御</li>
+              <li>Nhấp vào một quốc gia để chọn mục tiêu</li>
+              <li>Phóng tên lửa để giảm HP của kẻ thù</li>
+              <li>Chiếm lĩnh các quốc gia để mở rộng đế chế</li>
+              <li>Hồi phục và bảo vệ lãnh thổ của bạn</li>
             </ul>
           </div>
           {/* 玩法攻略 */}
           <div style={{ background: "#181c27", border: "2px solid #4caf50", borderRadius: 16, padding: 32, flex: "1 1 280px", minWidth: 260, maxWidth: 340, textAlign: "center", marginBottom: 16, boxShadow: "0 4px 24px #0004" }}>
             <div style={{ fontSize: 36, marginBottom: 12 }}>🎯</div>
-            <div style={{ fontWeight: 700, fontSize: 18, color: "#81c784", marginBottom: 8 }}>戦略のヒント</div>
+            <div style={{ fontWeight: 700, fontSize: 18, color: "#81c784", marginBottom: 8 }}>Mẹo Chiến Lược</div>
             <ul style={{ color: "#eee", fontSize: 15, textAlign: "left", margin: "0 auto", maxWidth: 220, paddingLeft: 18 }}>
-              <li>弱い国から始めて勝利しやすくする</li>
-              <li>ライブミサイルを追跡して戦略的機会を見つける</li>
-              <li>攻撃と防御のバランスを取る</li>
-              <li>ミサイルカウンターを監視する</li>
+              <li>Bắt đầu với các quốc gia yếu để dễ thắng</li>
+              <li>Theo dõi tên lửa trực tiếp để tìm cơ hội chiến lược</li>
+              <li>Cân bằng tấn công và phòng thủ</li>
+              <li>Theo dõi bộ đếm tên lửa của bạn</li>
             </ul>
           </div>
           {/* 进阶技巧 */}
           <div style={{ background: "#181c27", border: "2px solid #ab47bc", borderRadius: 16, padding: 32, flex: "1 1 280px", minWidth: 260, maxWidth: 340, textAlign: "center", marginBottom: 16, boxShadow: "0 4px 24px #0004" }}>
             <div style={{ fontSize: 36, marginBottom: 12 }}>🔥</div>
-            <div style={{ fontWeight: 700, fontSize: 18, color: "#ce93d8", marginBottom: 8 }}>上級テクニック</div>
+            <div style={{ fontWeight: 700, fontSize: 18, color: "#ce93d8", marginBottom: 8 }}>Chiến Thuật Nâng Cao</div>
             <ul style={{ color: "#eee", fontSize: 15, textAlign: "left", margin: "0 auto", maxWidth: 220, paddingLeft: 18 }}>
-              <li>連続攻撃で素早く拡大</li>
-              <li>弱体化した敵を利用する</li>
-              <li>マップ認識を活用した多面戦争</li>
-              <li>敵の行動に応じて戦略を適応</li>
+              <li>Tấn công liên hoàn để mở rộng nhanh chóng</li>
+              <li>Khai thác kẻ thù bị suy yếu</li>
+              <li>Sử dụng nhận thức bản đồ cho chiến tranh đa mặt trận</li>
+              <li>Thích ứng chiến lược theo hành động của đối thủ</li>
             </ul>
           </div>
         </div>
@@ -339,13 +286,13 @@ export default function JapaneseHomePage() {
 
       {/* FAQ区块 */}
       <section style={{ maxWidth: 900, margin: "48px auto 0", padding: 24 }}>
-        <h2 style={{ color: "#FFD600", fontSize: 28, fontWeight: 700, textAlign: "center", marginBottom: 32 }}>ClickWarよくある質問</h2>
+        <h2 style={{ color: "#FFD600", fontSize: 28, fontWeight: 700, textAlign: "center", marginBottom: 32 }}>Câu Hỏi Thường Gặp ClickWar</h2>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 24, justifyContent: "center" }}>
-                      {[
-            {q: 'ClickWarの遊び方は？', a: '国をクリックして選択し、ミサイルを発射して攻撃します。HPを0にして制圧し、帝国を拡大しましょう。'},
-            {q: 'ClickWarは無料ですか？', a: 'はい！登録やダウンロードは不要です。ブラウザで今すぐプレイできます。'},
-            {q: 'スマートフォンでプレイできますか？', a: 'もちろん！ClickWarは完全に互換性があり、すべてのデバイスで動作します。'},
-            {q: '自分の国を守るには？', a: '自分の領土をクリックして回復し、防御シールドを追加します。攻撃と防御のバランスを取って最良の結果を得ましょう。'},
+          {[
+            {q: 'Làm thế nào để chơi ClickWar?', a: 'Nhấp vào một quốc gia để chọn nó, sau đó phóng tên lửa để tấn công. Giảm HP xuống 0 để chiếm lĩnh và mở rộng đế chế của bạn.'},
+            {q: 'ClickWar có miễn phí không?', a: 'Có! Không cần đăng ký hoặc tải xuống. Chơi ngay lập tức trong trình duyệt của bạn.'},
+            {q: 'Tôi có thể chơi trên điện thoại không?', a: 'Chắc chắn! ClickWar hoàn toàn tương thích và hoạt động trên mọi thiết bị.'},
+            {q: 'Làm thế nào để bảo vệ các quốc gia của tôi?', a: 'Nhấp vào lãnh thổ của bạn để hồi phục và thêm khiên bảo vệ. Cân bằng tấn công và phòng thủ để có kết quả tốt nhất.'},
           ].map((item, i) => (
             <div key={i} style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 24, flex: "1 1 340px", minWidth: 260, maxWidth: 400, marginBottom: 16, boxShadow: "0 4px 24px #0004" }}>
               <div style={{ fontWeight: 700, fontSize: 17, color: "#FFD600", marginBottom: 8 }}>{item.q}</div>
@@ -357,67 +304,67 @@ export default function JapaneseHomePage() {
 
       {/* You May Also Like 区块，已从上方移到此处，并标题英文化 */}
       <section style={{ maxWidth: 1100, margin: "32px auto 0", padding: 24 }}>
-        <h2 style={{ color: "#FFD600", fontSize: 26, fontWeight: 700, textAlign: "center", marginBottom: 24 }}>おすすめページ</h2>
+        <h2 style={{ color: "#FFD600", fontSize: 26, fontWeight: 700, textAlign: "center", marginBottom: 24 }}>Bạn Cũng Có Thể Thích</h2>
         <div style={{ display: "flex", gap: 24, flexWrap: "wrap", justifyContent: "center" }}>
           <Link href="/what-is-clickwar-game" 
-            title="ClickWarとは？世界征服戦略ゲームについて学ぶ"
+            title="ClickWar là gì? Tìm hiểu về trò chơi chiến lược thống trị thế giới"
             style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 28, minWidth: 220, maxWidth: 320, textAlign: "center", color: "#FFD600", fontWeight: 700, fontSize: 18, textDecoration: "none", boxShadow: "0 4px 24px #0004", transition: "all 0.2s" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>❓</div>
-            ClickWarとは<br/>
-            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>ClickWarとは？ゲームの定義と紹介</span>
+            ClickWar Là Gì<br/>
+            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>ClickWar là gì? Định nghĩa và giới thiệu trò chơi</span>
           </Link>
           <Link href="/how-to-play-clickwar" 
-            title="ClickWarの詳細な遊び方ガイド"
+            title="Hướng dẫn chi tiết cách chơi ClickWar"
             style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 28, minWidth: 220, maxWidth: 320, textAlign: "center", color: "#FFD600", fontWeight: 700, fontSize: 18, textDecoration: "none", boxShadow: "0 4px 24px #0004", transition: "all 0.2s" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>📖</div>
-            ClickWarの遊び方<br/>
-            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>遊び方、図解ガイド、動画</span>
+            Cách Chơi ClickWar<br/>
+            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>Cách chơi, hướng dẫn minh họa và video</span>
           </Link>
           <Link href="/play-clickwar-unblocked" 
-            title="学校や職場でClickWarをプレイ"
+            title="Chơi ClickWar không bị chặn ở trường học hoặc công ty"
             style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 28, minWidth: 220, maxWidth: 320, textAlign: "center", color: "#FFD600", fontWeight: 700, fontSize: 18, textDecoration: "none", boxShadow: "0 4px 24px #0004", transition: "all 0.2s" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>🔓</div>
-            ClickWarブロック解除版<br/>
-            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>学校/職場でClickWarをプレイ</span>
+            ClickWar Không Bị Chặn<br/>
+            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>Chơi ClickWar ở trường học/công ty</span>
           </Link>
           <Link href="/clickwar-crazygames" style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 28, minWidth: 220, maxWidth: 320, textAlign: "center", color: "#FFD600", fontWeight: 700, fontSize: 18, textDecoration: "none", boxShadow: "0 4px 24px #0004", transition: "all 0.2s" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>🎮</div>
             ClickWar CrazyGames<br/>
-            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>CrazyGamesスタイルでClickWarを体験</span>
+            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>Trải nghiệm ClickWar theo phong cách CrazyGames</span>
           </Link>
           <Link href="/clickwar-poki" style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 28, minWidth: 220, maxWidth: 320, textAlign: "center", color: "#FFD600", fontWeight: 700, fontSize: 18, textDecoration: "none", boxShadow: "0 4px 24px #0004", transition: "all 0.2s" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>🕹️</div>
             ClickWar Poki<br/>
-            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>Pokiプラットフォームユーザー向け独占体験</span>
+            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>Trải nghiệm độc quyền cho người chơi nền tảng Poki</span>
           </Link>
           <Link href="/clickwar-coolmathgames" style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 28, minWidth: 220, maxWidth: 320, textAlign: "center", color: "#FFD600", fontWeight: 700, fontSize: 18, textDecoration: "none", boxShadow: "0 4px 24px #0004", transition: "all 0.2s" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>📚</div>
             ClickWar CoolmathGames<br/>
-            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>CoolmathGames教育ユーザーにおすすめ</span>
+            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>Được khuyến nghị cho người dùng giáo dục CoolmathGames</span>
           </Link>
           <Link href="/clickwar-tips" style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 28, minWidth: 220, maxWidth: 320, textAlign: "center", color: "#FFD600", fontWeight: 700, fontSize: 18, textDecoration: "none", boxShadow: "0 4px 24px #0004", transition: "all 0.2s" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>💡</div>
-            ClickWarのヒント<br/>
-            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>実用的なヒントと上級アドバイス</span>
+            Mẹo ClickWar<br/>
+            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>Mẹo thực tế và lời khuyên nâng cao</span>
           </Link>
           <Link href="/clickwar-strategy" style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 28, minWidth: 220, maxWidth: 320, textAlign: "center", color: "#FFD600", fontWeight: 700, fontSize: 18, textDecoration: "none", boxShadow: "0 4px 24px #0004", transition: "all 0.2s" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>🧠</div>
-            ClickWar戦略<br/>
-            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>戦略ガイドと勝利のアイデア</span>
+            Chiến Lược ClickWar<br/>
+            <span style={{ color: "#eee", fontWeight: 400, fontSize: 15 }}>Hướng dẫn chiến lược và ý tưởng chiến thắng</span>
           </Link>
         </div>
       </section>
 
       {/* What Players Say 区块 */}
       <section style={{ maxWidth: 900, margin: "40px auto 0", padding: 24 }}>
-        <h2 style={{ color: "#FFD600", fontSize: 26, fontWeight: 700, textAlign: "center", marginBottom: 24 }}>プレイヤーの声</h2>
+        <h2 style={{ color: "#FFD600", fontSize: 26, fontWeight: 700, textAlign: "center", marginBottom: 24 }}>Người Chơi Nói Gì</h2>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 24, justifyContent: "center" }}>
           <blockquote style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 24, minWidth: 260, maxWidth: 400, color: "#FFD600", fontWeight: 700, fontSize: 17, boxShadow: "0 4px 24px #0004", margin: 0 }}>
-            "ClickWarは今年プレイした中で最も中毒性のある戦略ゲームです！"
+            "ClickWar là trò chơi chiến lược gây nghiện nhất tôi đã chơi trong năm nay!"
             <footer style={{ color: "#eee", fontWeight: 400, fontSize: 15, marginTop: 10 }}>- Alex, USA</footer>
           </blockquote>
           <blockquote style={{ background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 24, minWidth: 260, maxWidth: 400, color: "#FFD600", fontWeight: 700, fontSize: 17, boxShadow: "0 4px 24px #0004", margin: 0 }}>
-            "学びやすく、マスターするのは難しい。グローバル戦闘が本当に激しい！"
+            "Dễ học, khó thành thạo. Các trận chiến toàn cầu thật mãnh liệt!"
             <footer style={{ color: "#eee", fontWeight: 400, fontSize: 15, marginTop: 10 }}>- Maria, Spain</footer>
           </blockquote>
         </div>
@@ -425,31 +372,30 @@ export default function JapaneseHomePage() {
 
       {/* Latest News & Updates 区块 */}
       <section style={{ maxWidth: 900, margin: "40px auto 0", padding: 24 }}>
-        <h2 style={{ color: "#FFD600", fontSize: 26, fontWeight: 700, textAlign: "center", marginBottom: 24 }}>最新ニュース & アップデート</h2>
+        <h2 style={{ color: "#FFD600", fontSize: 26, fontWeight: 700, textAlign: "center", marginBottom: 24 }}>Tin Tức & Cập Nhật Mới Nhất</h2>
                   <ul style={{ color: "#FFD600", fontSize: 17, fontWeight: 700, background: "#181c27", border: "2px solid #FFD600", borderRadius: 16, padding: 32, boxShadow: "0 4px 24px #0004", maxWidth: 700, margin: "0 auto" }}>
-            <li>2024年6月: 新しいマップと同盟システムをリリース！</li>
-            <li>2024年5月: ランキングシーズン開始。トップを目指して競争しよう！</li>
+            <li>Tháng 6/2024: Phát hành bản đồ mới và hệ thống liên minh!</li>
+            <li>Tháng 5/2024: Mùa xếp hạng bắt đầu. Thi đấu để giành vị trí đầu!</li>
           </ul>
       </section>
 
       {/* Join the ClickWar Community 区块 */}
       <section style={{ maxWidth: 900, margin: "40px auto 0", padding: 24 }}>
-        <h2 style={{ color: "#FFD600", fontSize: 26, fontWeight: 700, textAlign: "center", marginBottom: 24 }}>ClickWarコミュニティに参加</h2>
+        <h2 style={{ color: "#FFD600", fontSize: 26, fontWeight: 700, textAlign: "center", marginBottom: 24 }}>Tham Gia Cộng Đồng ClickWar</h2>
         <p style={{ color: "#eee", fontSize: 17, textAlign: "center", marginBottom: 18 }}>
-          戦略を議論し、勝利を共有し、
+          Thảo luận chiến lược, chia sẻ chiến thắng và gặp gỡ các người chơi khác trên
           <a href="https://discord.gg/xxxx" target="_blank" rel="noopener noreferrer nofollow" style={{ color: "#FFD600", textDecoration: "underline", margin: "0 8px" }}> Discord</a>
-          や
-          <a href="https://reddit.com/r/clickwar" target="_blank" rel="noopener noreferrer nofollow" style={{ color: "#FFD600", textDecoration: "underline", margin: "0 8px" }}> Reddit</a>
-          で他のプレイヤーと出会おう！
+          hoặc
+          <a href="https://reddit.com/r/clickwar" target="_blank" rel="noopener noreferrer nofollow" style={{ color: "#FFD600", textDecoration: "underline", margin: "0 8px" }}> Reddit</a>!
         </p>
       </section>
 
       {/* 底部CTA区块 */}
       <section style={{ background: "linear-gradient(90deg, #d32f2f 0%, #ffd600 100%)", padding: "48px 0", textAlign: "center", margin: "48px 0 0 0" }}>
-        <h2 style={{ color: "#181c27", fontSize: 32, fontWeight: 800, marginBottom: 16 }}>世界征服の準備はできましたか？</h2>
-        <p style={{ color: "#181c27", fontSize: 20, marginBottom: 32 }}>何千人ものプレイヤーと一緒に究極の戦略戦闘ClickWarに参加しましょう。ミサイルを発射し、領土を制圧し、世界のリーダーになろう！</p>
-        <a href="#top" aria-label="ページトップに戻ってClickWarをプレイ" style={{ background: "#181c27", color: "#FFD600", fontWeight: 700, fontSize: 22, padding: "20px 48px", borderRadius: 16, textDecoration: "none", boxShadow: "0 4px 24px #0006", display: "inline-block", transition: "all .2s" }}>
-          🚀 CLICKWARを今すぐプレイ
+        <h2 style={{ color: "#181c27", fontSize: 32, fontWeight: 800, marginBottom: 16 }}>Sẵn Sàng Chinh Phục Thế Giới?</h2>
+        <p style={{ color: "#181c27", fontSize: 20, marginBottom: 32 }}>Tham gia cùng hàng nghìn người chơi trong trận chiến chiến lược ClickWar tối thượng. Phóng tên lửa, chiếm lĩnh lãnh thổ và trở thành nhà lãnh đạo toàn cầu!</p>
+        <a href="#top" style={{ background: "#181c27", color: "#FFD600", fontWeight: 700, fontSize: 22, padding: "20px 48px", borderRadius: 16, textDecoration: "none", boxShadow: "0 4px 24px #0006", display: "inline-block", transition: "all .2s" }}>
+          🚀 CHƠI CLICKWAR NGAY
         </a>
       </section>
 
@@ -457,12 +403,12 @@ export default function JapaneseHomePage() {
         <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
           <div style={{ fontWeight: 700, color: "#FFD600" }}>CLICKWAR &copy; {new Date().getFullYear()}</div>
           <div style={{ display: "flex", gap: 18, flexWrap: "wrap", justifyContent: "center" }}>
-            <a href="/privacy-policy" title="ClickWarプライバシーポリシー" style={{ color: "#FFD600", textDecoration: "none" }}>プライバシーポリシー</a>
-            <a href="/terms-of-service" title="ClickWar利用規約" style={{ color: "#FFD600", textDecoration: "none" }}>利用規約</a>
+            <a href="/privacy-policy" title="Chính sách bảo mật ClickWar" style={{ color: "#FFD600", textDecoration: "none" }}>Chính Sách Bảo Mật</a>
+            <a href="/terms-of-service" title="Điều khoản dịch vụ ClickWar" style={{ color: "#FFD600", textDecoration: "none" }}>Điều Khoản Dịch Vụ</a>
           </div>
-          <div style={{ color: "#FFD600" }}>お問い合わせ: <a href="mailto:support@clickwar.app" style={{ color: "#FFD600", textDecoration: "underline" }}>support@clickwar.app</a></div>
+          <div style={{ color: "#FFD600" }}>Liên Hệ: <a href="mailto:support@clickwar.app" style={{ color: "#FFD600", textDecoration: "underline" }}>support@clickwar.app</a></div>
         </div>
-        <div style={{ marginTop: 16, color: "#666", fontSize: 13 }}><span style={{ color: "#e53935" }}>❤️</span> ClickWar Team によって作成</div>
+        <div style={{ marginTop: 16, color: "#666", fontSize: 13 }}>Được tạo bởi <span style={{ color: "#e53935" }}>❤️</span> ClickWar Team</div>
       </footer>
     </main>
     </>

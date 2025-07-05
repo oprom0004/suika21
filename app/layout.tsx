@@ -1,44 +1,44 @@
+import Footer from "../components/Footer";
 import type React from "react"
 import type { Metadata } from "next"
 import { CookieConsent } from "./components/CookieConsent"
-import { LanguageProvider } from "./components/LanguageProvider"
 import { AICrawlerMeta } from "./components/AICrawlerMeta"
 import Navbar from "./components/Navbar"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://suika.games"),
+  metadataBase: new URL("https://clickwar.app"),
   title: {
-    default: "Suika Game - Play Free Watermelon Puzzle Online | No Download Required",
-    template: "%s | Suika Games",
+    default: "ClickWar - Play Free World Domination Strategy Game Online | Missile Attack Game",
+    template: "%s | ClickWar",
   },
   description:
-    "🍉 Play Suika Game free online! Merge fruits to create watermelons in this viral Japanese puzzle. No ads, no downloads. Mobile-friendly with 11+ game variants.",
+    "🎯 Play ClickWar free online! Conquer the world by launching missiles, capturing countries, and dominating territories in this addictive strategy game. No download required!",
   keywords: [
-    "suika game",
-    "watermelon game",
-    "fruit merge game",
-    "japanese puzzle game",
-    "watermelon puzzle",
-    "suika game online",
-    "play suika game free",
-    "fruit puzzle game",
-    "merge puzzle",
-    "watermelon merge game",
-    "suika game unblocked",
-    "japanese watermelon game",
-    "fruit drop game",
-    "physics puzzle game",
-    "casual puzzle game",
-    "mobile puzzle game",
-    "browser game",
-    "no download game",
-    "free online puzzle",
-    "viral puzzle game",
+    "clickwar",
+    "world domination game",
+    "missile attack game",
+    "territory strategy",
+    "online war game",
+    "clickwar game",
+    "strategy war game",
+    "country conquest game",
+    "missile strategy game",
+    "global domination game",
+    "clickwar online",
+    "play clickwar free",
+    "war strategy game",
+    "territory control game",
+    "missile defense game",
+    "empire building game",
+    "real-time war game",
+    "browser war game",
+    "no download war game",
+    "free strategy game",
   ].join(", "),
-  authors: [{ name: "Suika Games Team", url: "https://suika.games" }],
-  creator: "Suika Games",
-  publisher: "Suika Games",
+  authors: [{ name: "ClickWar Team", url: "https://clickwar.app" }],
+  creator: "ClickWar",
+  publisher: "ClickWar",
   formatDetection: {
     email: false,
     address: false,
@@ -66,48 +66,44 @@ export const metadata: Metadata = {
     yahoo: "your-yahoo-verification-code",
   },
   alternates: {
-    canonical: "https://suika.games",
+    canonical: "https://clickwar.app",
     languages: {
-      "x-default": "https://suika.games",
-      en: "https://suika.games",
-      ja: "https://suika.games/ja",
-      es: "https://suika.games/es",
-      pt: "https://suika.games/pt",
-      fr: "https://suika.games/fr",
-      de: "https://suika.games/de",
-      nl: "https://suika.games/nl",
+      "x-default": "https://clickwar.app",
+      en: "https://clickwar.app",
+      ja: "https://clickwar.app/ja",
+      vi: "https://clickwar.app/vn",
     },
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://suika.games",
-    siteName: "Suika Games",
-    title: "Suika Game - Play Free Watermelon Puzzle Online",
+    url: "https://clickwar.app",
+    siteName: "ClickWar",
+    title: "ClickWar - Play Free World Domination Strategy Game Online",
     description:
-      "🍉 Play the viral Japanese watermelon puzzle game free online! Merge fruits, create watermelons, and enjoy 11+ game variants.",
+      "🎯 Play ClickWar free online! Conquer the world by launching missiles, capturing countries, and dominating territories in this addictive strategy game.",
     images: [
       {
-        url: "https://suika.games/og-image.jpg",
+        url: "https://clickwar.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Suika Game - Watermelon Puzzle Game Online",
+        alt: "ClickWar - World Domination Strategy Game",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@SuikaGames",
-    creator: "@SuikaGames",
-    title: "Suika Game - Play Free Watermelon Puzzle Online",
-    description: "🍉 Play the viral Japanese watermelon puzzle game free online! Merge fruits, create watermelons.",
-    images: ["https://suika.games/twitter-card.jpg"],
+    site: "@ClickWarGame",
+    creator: "@ClickWarGame",
+    title: "ClickWar - Play Free World Domination Strategy Game Online",
+    description: "🎯 Play ClickWar free online! Conquer the world by launching missiles, capturing countries.",
+    images: ["https://clickwar.app/twitter-card.jpg"],
   },
   category: "Games",
-  classification: "Puzzle Games",
+  classification: "Strategy Games",
   generator: "Next.js",
-  applicationName: "Suika Games",
+  applicationName: "ClickWar",
   referrer: "origin-when-cross-origin",
 }
 
@@ -139,8 +135,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
 
         {/* DNS Prefetch */}
-        <link rel="dns-prefetch" href="//suikagamejp.com" />
-        <link rel="dns-prefetch" href="//poki.com" />
+        <link rel="dns-prefetch" href="//clickwar.app" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -149,8 +144,8 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
 
         {/* Theme Color */}
-        <meta name="theme-color" content="#4ade80" />
-        <meta name="msapplication-TileColor" content="#4ade80" />
+        <meta name="theme-color" content="#dc2626" />
+        <meta name="msapplication-TileColor" content="#dc2626" />
 
         {/* Additional SEO Meta Tags */}
         <meta name="language" content="English" />
@@ -164,7 +159,7 @@ export default function RootLayout({
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Plausible Analytics */}
-        <script defer data-domain="suika.games" src="https://plausible.io/js/script.js"></script>
+        <script defer data-domain="clickwar.app" src="https://plausible.io/js/script.js"></script>
         <script dangerouslySetInnerHTML={{
           __html: `window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }`
         }} />
@@ -176,32 +171,32 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Suika Games",
-              url: "https://suika.games",
-              description: "Play Suika Game free online! Merge fruits to create watermelons in this viral Japanese puzzle.",
-              inLanguage: ["en", "ja", "fr"],
+              name: "ClickWar",
+              url: "https://clickwar.app",
+              description: "Play ClickWar free online! Conquer the world by launching missiles, capturing countries, and dominating territories in this addictive strategy game.",
+              inLanguage: ["en"],
               isAccessibleForFree: true,
-              genre: ["Puzzle", "Casual", "Physics"],
+              genre: ["Strategy", "War", "Conquest"],
               audience: {
                 "@type": "Audience",
                 audienceType: "General",
               },
               publisher: {
                 "@type": "Organization",
-                name: "Suika Games",
-                url: "https://suika.games",
+                name: "ClickWar",
+                url: "https://clickwar.app",
               },
             }),
           }}
         />
       </head>
       <body className="font-sans antialiased">
-        <LanguageProvider />
         <AICrawlerMeta />
         <Navbar />
         {children}
         <CookieConsent />
       </body>
+      <Footer />
     </html>
   )
 }

@@ -2,11 +2,11 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Suika Games - User Agreement & Rules",
+  title: "Terms of Service | ClickWar Games - User Agreement & Rules",
   description:
-    "Read our Terms of Service for Suika Games. Learn about user rights, usage restrictions, copyright terms, and community guidelines for our gaming platform.",
+    "Read our Terms of Service for ClickWar Games. Learn about user rights, usage restrictions, copyright terms, and community guidelines for our gaming platform.",
   alternates: {
-    canonical: "https://suika.games/terms-of-service",
+    canonical: "https://clickwar.app/terms-of-service",
   },
 }
 
@@ -22,7 +22,7 @@ export default function TermsOfServicePage() {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Agreement to Terms</h2>
               <p>
-                By accessing and using Suika Games (suika.games), you accept and agree to be bound by the terms and
+                By accessing and using ClickWar Games (clickwar.app), you accept and agree to be bound by the terms and
                 provision of this agreement. If you do not agree to abide by the above, please do not use this service.
               </p>
             </section>
@@ -30,10 +30,10 @@ export default function TermsOfServicePage() {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Description of Service</h2>
               <p>
-                Suika Games is a fan-operated website that provides access to Suika Game and its variants. We offer:
+                ClickWar Games is a fan-operated website that provides access to ClickWar Game and its variants. We offer:
               </p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Free online access to Suika Game and related puzzle games</li>
+                <li>Free online access to ClickWar Game and related puzzle games</li>
                 <li>Game variants and creative remixes</li>
                 <li>Strategy guides and gameplay tips</li>
                 <li>Community content and resources</li>
@@ -79,13 +79,13 @@ export default function TermsOfServicePage() {
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Intellectual Property Rights</h2>
               <h3 className="text-xl font-medium text-gray-800 mb-3">Third-Party Content</h3>
               <p className="mb-4">
-                Suika Game and its original concept are the intellectual property of their respective creators. We are a
+                ClickWar Game and its original concept are the intellectual property of their respective creators. We are a
                 fan site that provides access to publicly available versions and variants of these games.
               </p>
 
               <h3 className="text-xl font-medium text-gray-800 mb-3">Our Content</h3>
               <p className="mb-4">
-                Original content created by Suika Games, including strategy guides, reviews, and website design, is
+                Original content created by ClickWar Games, including strategy guides, reviews, and website design, is
                 protected by copyright. You may share and reference our content with proper attribution.
               </p>
 
@@ -121,7 +121,7 @@ export default function TermsOfServicePage() {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Limitation of Liability</h2>
               <p>
-                Suika Games shall not be liable for any indirect, incidental, special, consequential, or punitive
+                ClickWar Games shall not be liable for any indirect, incidental, special, consequential, or punitive
                 damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses,
                 resulting from your use of our service.
               </p>
@@ -158,7 +158,7 @@ export default function TermsOfServicePage() {
                 <Link href="/contact" className="text-blue-600 hover:text-blue-800 underline">
                   our contact page
                 </Link>{" "}
-                or email us at contact@suika.games.
+                or email us at contact@clickwar.app.
               </p>
             </section>
           </div>
@@ -169,7 +169,7 @@ export default function TermsOfServicePage() {
                 href="/"
                 className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors duration-200"
               >
-                Back to Suika Game
+                Back to ClickWar Game
               </Link>
               <Link
                 href="/privacy-policy"

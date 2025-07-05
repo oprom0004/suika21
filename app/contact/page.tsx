@@ -2,11 +2,11 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Contact Suika Games - Get in Touch with Our Team",
+  title: "Contact ClickWar Games - Get in Touch with Our Team",
   description:
-    "Contact Suika Games for support, feedback, or partnership inquiries. Reach out to our team for any questions about our watermelon puzzle games and services.",
+    "Contact ClickWar Games for support, feedback, or partnership inquiries. Reach out to our team for any questions about our puzzle games and services.",
   alternates: {
-    canonical: "https://suika.games/contact",
+    canonical: "https://clickwar.app/contact",
   },
 }
 
@@ -17,7 +17,7 @@ export default function ContactPage() {
         <div className="bg-white rounded-xl p-8 game-shadow">
           <div className="text-center mb-8">
             <span className="text-6xl mb-4 block">📧</span>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Suika Games</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact ClickWar Games</h1>
             <p className="text-xl text-gray-600">We'd love to hear from you!</p>
           </div>
 
@@ -35,8 +35,8 @@ export default function ContactPage() {
                   <p className="text-gray-700 mb-2">
                     For general questions, feedback, or suggestions (please mention "General" in subject):
                   </p>
-                  <a href="mailto:contact@suika.games" className="text-blue-600 hover:text-blue-800 font-medium">
-                    contact@suika.games
+                  <a href="mailto:support@clickwar.app" className="text-blue-600 hover:text-blue-800 font-medium">
+                    support@clickwar.app
                   </a>
                 </div>
 
@@ -48,8 +48,8 @@ export default function ContactPage() {
                   <p className="text-gray-700 mb-2">
                     For technical issues, bugs, or game problems (please mention "Support" in subject):
                   </p>
-                  <a href="mailto:contact@suika.games" className="text-blue-600 hover:text-blue-800 font-medium">
-                    contact@suika.games
+                  <a href="mailto:support@clickwar.app" className="text-blue-600 hover:text-blue-800 font-medium">
+                    support@clickwar.app
                   </a>
                 </div>
 
@@ -61,8 +61,8 @@ export default function ContactPage() {
                   <p className="text-gray-700 mb-2">
                     For business inquiries and partnerships (please mention "Business" in subject):
                   </p>
-                  <a href="mailto:contact@suika.games" className="text-blue-600 hover:text-blue-800 font-medium">
-                    contact@suika.games
+                  <a href="mailto:support@clickwar.app" className="text-blue-600 hover:text-blue-800 font-medium">
+                    support@clickwar.app
                   </a>
                 </div>
 
@@ -74,8 +74,8 @@ export default function ContactPage() {
                   <p className="text-gray-700 mb-2">
                     For privacy concerns and legal matters (please mention "Legal" in subject):
                   </p>
-                  <a href="mailto:contact@suika.games" className="text-blue-600 hover:text-blue-800 font-medium">
-                    contact@suika.games
+                  <a href="mailto:support@clickwar.app" className="text-blue-600 hover:text-blue-800 font-medium">
+                    support@clickwar.app
                   </a>
                 </div>
               </div>

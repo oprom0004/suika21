@@ -3,27 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --fruit-red: #ff6b6b;
-  --fruit-orange: #ffa726;
-  --fruit-yellow: #ffeb3b;
-  --fruit-green: #66bb6a;
-  --fruit-purple: #ab47bc;
-  --watermelon-green: #4caf50;
-  --watermelon-dark: #2e7d32;
-  --watermelon-light: #81c784;
+  --click-red: #ef4444;
+  --click-orange: #f97316;
+  --click-yellow: #eab308;
+  --click-green: #22c55e;
+  --click-purple: #a855f7;
+  --click-blue: #3b82f6;
+  --click-dark: #1d4ed8;
+  --click-light: #60a5fa;
 }
 
 body {
+  margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif;
 }
 
-.fruit-gradient {
-  background: linear-gradient(135deg, var(--fruit-red), var(--fruit-orange), var(--fruit-yellow), var(--fruit-green));
+.click-rainbow-gradient {
+  background: linear-gradient(135deg, var(--click-red), var(--click-orange), var(--click-yellow), var(--click-green));
 }
 
-.watermelon-gradient {
-  background: linear-gradient(135deg, var(--watermelon-green), var(--watermelon-dark));
+.click-gradient {
+  background: linear-gradient(135deg, var(--click-blue), var(--click-dark));
 }
 
 .game-shadow {
@@ -39,7 +40,7 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-.fruit-card {
+.click-card {
   background: linear-gradient(145deg, #ffffff, #f8f9fa);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
